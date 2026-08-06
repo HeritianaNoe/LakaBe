@@ -39,11 +39,20 @@
     </svg>
     <span>LakaBe</span>
   </a>
+  
   <nav class="nav__links">
     <a href="#soratramasina">Soratra Masina</a>
     <a href="#lakabefanorona">LakaBe Fanorona</a>
     <a href="#alimanaka">Alimanaka</a>
   </nav>
+
+  <!-- Boto hifidianana ny Teny (Language Switcher) -->
+  <div class="lang-switcher">
+    <button onclick="changeLanguage('mg')" class="lang-btn active">MG</button> |
+    <button onclick="changeLanguage('fr')" class="lang-btn">FR</button> |
+    <button onclick="changeLanguage('en')" class="lang-btn">EN</button>
+  </div>
+
   <button class="nav__toggle" id="navToggle" aria-label="Sokafy ny lisitra" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -53,18 +62,18 @@
 
   <section class="hero">
     <div class="hero__board" aria-hidden="true" id="heroBoard"></div>
-    <p class="hero__eyebrow">Fitehirizana teknolojia malagasy</p>
+    <p class="hero__eyebrow" data-i18n="hero_eyebrow">Fitehirizana teknolojia malagasy</p>
     <h1 class="hero__title">
       LakaBe<br>
-      <span class="hero__title-accent">Iray ny fikasana.</span>
+      <span class="hero__title-accent" data-i18n="hero_title_accent">Iray ny fikasana.</span>
     </h1>
-    <p class="hero__lead">
+    <p class="hero__lead" data-i18n="hero_lead">
       Ny Baiboly vakiana isan'andro, ny lalao nampifandraisana taranaka maro,
       nifandimby — natao ho an'ny fitaovana
       manaraka ny taona, kanefa mitazona ny votoatiny.
     </p>
     <div class="hero__scroll">
-      <span>Hijerena ny telo</span>
+      <span data-i18n="hero_scroll">Hijerena ny telo</span>
       <svg viewBox="0 0 12 20" aria-hidden="true"><path d="M6 0v18M1 13l5 5 5-5"></path></svg>
     </div>
   </section>
@@ -85,9 +94,9 @@
       </svg>
     </div>
     <div class="app__copy">
-      <p class="app__eyebrow">01 — Famakiana</p>
+      <p class="app__eyebrow" data-i18n="bible_eyebrow">01 — Famakiana</p>
       <h2 class="app__title">Soratra Masina</h2>
-      <p class="app__desc">
+      <p class="app__desc" data-i18n="bible_desc">
         Application famakiana Baiboly, natao mba ho namana isan'andro:
         mari-pamantarana miloko ny andininy tianao hotsarovana, fanoratana
         naoty manokana eo am-pamakiana, fikarohana haingana amin'ny andininy
@@ -95,10 +104,10 @@
         manontolo amin'ny hiaraha-mamaky.
       </p>
       <ul class="app__features">
-        <li>Marika miloko amin'ny andininy</li>
-        <li>Naoty mifandray amin'ny toko sy andininy</li>
-        <li>Fikarohana amin'ny andininy rehetra</li>
-        <li>Kopia sy fizarana toko iray manontolo</li>
+        <li data-i18n="bible_feat_1">Marika miloko amin'ny andininy</li>
+        <li data-i18n="bible_feat_2">Naoty mifandray amin'ny toko sy andininy</li>
+        <li data-i18n="bible_feat_3">Fikarohana amin'ny andininy rehetra</li>
+        <li data-i18n="bible_feat_4">Kopia sy fizarana toko iray manontolo</li>
       </ul>
       <div class="app__downloads">
         <a class="dl" href="downloads/android/soratramasina-signed-apk.zip" download>
@@ -128,63 +137,50 @@
     <div class="app__figure">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
         <style>
-          /* Styling ho an'ny solaitra sy ny vato */
-          .board-bg { fill: #f4ece1; } /* Loko ambadika (wood effect) */
+          .board-bg { fill: #f4ece1; }
           .board-line { stroke: #5c3a21; stroke-width: 2.5; stroke-linecap: round; }
-          
           .stone { stroke: #1a1a1a; stroke-width: 1.5; }
-          .stone--black { fill: #333333; }   /* Vato Mainty */
-          .stone--white { fill: #ffffff; stroke: #888888; } /* Vato Fotsy */
-          
-          .stone--live {                      /* Vato mirehitra / Mandeha */
+          .stone--black { fill: #333333; }
+          .stone--white { fill: #ffffff; stroke: #888888; }
+          .stone--live {
             filter: drop-shadow(0px 0px 4px #ff9900);
             stroke: #ff9900;
             stroke-width: 2.5;
           }
         </style>
 
-        <!-- Sary aoriana (Background) -->
         <rect width="240" height="240" class="board-bg" rx="10" />
 
-        <!-- Sira sy tsipiky ny Fanorona 3x3 -->
         <g class="fanorona-board">
-          <!-- Tsipika mitsivalana -->
           <line x1="40" y1="40" x2="200" y2="40" class="board-line" />
           <line x1="40" y1="120" x2="200" y2="120" class="board-line" />
           <line x1="40" y1="200" x2="200" y2="200" class="board-line" />
 
-          <!-- Tsipika mitsangana -->
           <line x1="40" y1="40" x2="40" y2="200" class="board-line" />
           <line x1="120" y1="40" x2="120" y2="200" class="board-line" />
           <line x1="200" y1="40" x2="200" y2="200" class="board-line" />
 
-          <!-- Tsipika mitsivalana misdiagonal (Diagonals) - TSY MAINTSY MISY AMIN'NY FANORONA -->
           <line x1="40" y1="40" x2="200" y2="200" class="board-line" />
           <line x1="200" y1="40" x2="40" y2="200" class="board-line" />
         </g>
 
-        <!-- Ny Vato (Stones) - Fametrahana amin'ny fanombohana -->
-        <!-- Mj3 1 (Ambony) -->
         <circle cx="40" cy="40" r="10" class="stone stone--white" />
         <circle cx="120" cy="40" r="10" class="stone stone--white" />
         <circle cx="200" cy="40" r="10" class="stone stone--black" />
 
-        <!-- Mj3 2 (Afovoany) -->
         <circle cx="40" cy="120" r="10" class="stone stone--white" />
-        <circle cx="120" cy="120" r="10" class="stone stone--white stone--live" /> <!-- Vato mandeha -->
+        <circle cx="120" cy="120" r="10" class="stone stone--white stone--live" />
         <circle cx="200" cy="120" r="10" class="stone stone--black" />
 
-        <!-- Mj3 3 (Ambany) -->
         <circle cx="40" cy="200" r="10" class="stone stone--black" />
         <circle cx="120" cy="200" r="10" class="stone stone--black" />
         <circle cx="200" cy="200" r="10" class="stone stone--black" />
       </svg>
-
     </div>
     <div class="app__copy">
-      <p class="app__eyebrow">02 — Filalaovana</p>
+      <p class="app__eyebrow" data-i18n="fanorona_eyebrow">02 — Filalaovana</p>
       <h2 class="app__title">Lakabe Fanorona</h2>
-      <p class="app__desc">
+      <p class="app__desc" data-i18n="fanorona_desc">
         Ny fanorona dia lalao malaza teto Madagasikara hatramin'ny ela, izay
         mampiasa saina: ny fisamborana vato ataon'ny mpilalao amin'ny
         fandalovana na fisintonana no mahatonga ny fifandonana isaky ny
@@ -193,10 +189,10 @@
         amin'ny sakaiza.
       </p>
       <ul class="app__features">
-        <li>Fanorona amin'ny fomba nentim-paharazana</li>
-        <li>Fisamborana amin'ny fandalovana sy fisintonana</li>
-        <li>Milalao amin'ny olona iray hafa eo amin'ny finday iray</li>
-        <li>Fampahatsiahivana ny fitsipiky ny lalao</li>
+        <li data-i18n="fanorona_feat_1">Fanorona amin'ny fomba nentim-paharazana</li>
+        <li data-i18n="fanorona_feat_2">Fisamborana amin'ny fandalovana sy fisintonana</li>
+        <li data-i18n="fanorona_feat_3">Milalao amin'ny olona iray hafa eo amin'ny finday iray</li>
+        <li data-i18n="fanorona_feat_4">Fampahatsiahivana ny fitsipiky ny lalao</li>
       </ul>
       <div class="app__downloads">
         <a class="dl" href="downloads/android/lakabefanorona-signed-apk.zip" download>
@@ -237,9 +233,9 @@
       </svg>
     </div>
     <div class="app__copy">
-      <p class="app__eyebrow">03 — Kalendrie ara-pinoana</p>
+      <p class="app__eyebrow" data-i18n="cal_eyebrow">03 — Kalendrie ara-pinoana</p>
       <h2 class="app__title">Alimanaka</h2>
-      <p class="app__desc">
+      <p class="app__desc" data-i18n="cal_desc">
         Ny Alimanaka dia kalendrie litorjika katolika, manaraka ny
         tsingerin-taona ara-pivavahana (Fiaviana, Karemy, Paka, sns.) sy ny
         loko litorjika mifanaraka amin'ny vanim-potoana tsirairay.
@@ -248,10 +244,10 @@
         mahafantatra sy mankalaza ny Olomasina isan'andro.
       </p>
       <ul class="app__features">
-        <li>Kalendrie litorjika katolika isan'andro</li>
-        <li>Tsingerin-taona sy loko litorjika</li>
-        <li>Rakitry ny Olomasina — tantara sy fetiny</li>
-        <li>Fikarohana Olomasina manokana</li>
+        <li data-i18n="cal_feat_1">Kalendrie litorjika katolika isan'andro</li>
+        <li data-i18n="cal_feat_2">Tsingerin-taona sy loko litorjika</li>
+        <li data-i18n="cal_feat_3">Rakitry ny Olomasina — tantara sy fetiny</li>
+        <li data-i18n="cal_feat_4">Fikarohana Olomasina manokana</li>
       </ul>
       <div class="app__downloads">
       <a class="dl" href="downloads/android/alimanaka-signed-apk.zip" download>
@@ -278,7 +274,7 @@
 
 <footer class="footer">
   <div class="footer__mark">LakaBe</div>
-  <p class="footer__note">
+  <p class="footer__note" data-i18n="footer_author">
     Mpanoratra RASOLOMANANA Heritiana Noe.
   </p>
 </footer>

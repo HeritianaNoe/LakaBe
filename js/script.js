@@ -29,7 +29,14 @@ const translations = {
     cal_feat_2: "Tsingerin-taona sy loko litorjika",
     cal_feat_3: "Rakitry ny Olomasina — tantara sy fetiny",
     cal_feat_4: "Fikarohana Olomasina manokana",
-    footer_author: "Mpanoratra RASOLOMANANA Heritiana Noe."
+
+    // Fizarana HAFA
+    other_title: "Hafa",
+    other_desc: "Karazana lalao ho an'ny ankizy toy ny Fanorona 5 sy Fanorona 3 ary ny Volana izay natao handalinana ny teny Malagasy. Marihana fa ho an'i Android daholo ireto.",
+
+    // FOOTER
+    footer_zip_note: "Ny fichier rehetra halainao ato dia zip avokoa. Ny antony voalohany dia mba ho maivana ny fakana azy ary  mba tsisy sakana eo ampisotonana azy amin'ny mety ahiahy ny system hoe virus.",
+    footer_author: "2026 - Mpanoratra RASOLOMANANA Heritiana Noe."
   },
   fr: {
     nav_bible: "Sainte Bible",
@@ -60,7 +67,14 @@ const translations = {
     cal_feat_2: "Temps liturgiques et couleurs associées",
     cal_feat_3: "Registre des Saints — histoire et fêtes",
     cal_feat_4: "Recherche personnalisée de Saints",
-    footer_author: "Auteur : RASOLOMANANA Heritiana Noe."
+    
+    // Fizarana HAFA
+    other_title: "Autres",
+    other_desc: "Jeux pour enfants comme Fanorona 5 et Fanorona 3, ainsi que Volana conçu pour approfondir la langue malgache. Veuillez noter qu'ils sont tous destinés à Android.",
+
+    // FOOTER
+    footer_zip_note: "Tous les fichiers téléchargés ici sont au format ZIP. La raison principale est d'alléger le téléchargement et  d'éviter tout blocage lors de l'extraction dû aux fausses alertes de virus du système.",
+    footer_author: "2026 - Auteur RASOLOMANANA Heritiana Noe."
   },
   en: {
     nav_bible: "Holy Bible",
@@ -91,7 +105,14 @@ const translations = {
     cal_feat_2: "Liturgical cycles and seasonal colors",
     cal_feat_3: "Saints archive — life story & feast days",
     cal_feat_4: "Search for specific Saints",
-    footer_author: "Author: RASOLOMANANA Heritiana Noe."
+    
+    // Fizarana HAFA
+    other_title: "Others",
+    other_desc: "Games for kids such as Fanorona 5 and Fanorona 3, as well as Volana designed to explore the Malagasy language. Please note that these are all for Android.",
+
+    // FOOTER
+    footer_zip_note: "All files you download here are in ZIP format. The main reason is to make downloads lighter and  to prevent any blocking during extraction caused by false virus alerts from the system.",
+    footer_author: "2026 - Author RASOLOMANANA Heritiana Noe."
   }
 };
 

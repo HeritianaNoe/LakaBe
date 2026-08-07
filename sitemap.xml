@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Pejy fidirana lehibe (Home) -->
+  <url>
+    <loc>https://lakabe.vercel.app/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Fizarana Soratra Masina -->
+  <url>
+    <loc>https://lakabe.vercel.app/#soratramasina</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fizarana Lakabe Fanorona -->
+  <url>
+    <loc>https://lakabe.vercel.app/#lakabefanorona</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fizarana Alimanaka -->
+  <url>
+    <loc>https://lakabe.vercel.app/#alimanaka</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

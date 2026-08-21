@@ -6,7 +6,7 @@
 <meta name="google-site-verification" content="googlefadebbb4d6add5bb" />
 <title>LakaBe - Fitehirizana Teknolojia Malagasy</title>
 <link rel="icon" href="lakabe.ico">
-<meta name="description" content="Soratra Masina, Lakabe Fanorona ary Alimanaka. Alao maimaim-poana.">
+<meta name="description" content="Soratra Masina, Lakabe Fanorona, Alimanaka, Imerina ary Fihirana. Alao maimaim-poana.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -41,12 +41,13 @@
   </a>
   
   <nav class="nav__links">
-    <a href="#soratramasina">Soratra Masina</a>
-    <a href="#lakabefanorona">LakaBe Fanorona</a>
-    <a href="#alimanaka">Alimanaka</a>
+    <a href="#soratramasina" data-i18n="nav_bible">Baiboly</a>
+    <a href="#lakabefanorona" data-i18n="nav_fanorona">Fanorona</a>
+    <a href="#alimanaka" data-i18n="nav_calendar">Alimanaka</a>
+    <a href="#imerina" data-i18n="nav_imerina">Imerina</a>
+    <a href="#fihirana" data-i18n="nav_fihirana">Fihirana</a>
   </nav>
 
-  <!-- Boto hifidianana ny Teny (Language Switcher) -->
   <div class="lang-switcher">
     <button onclick="changeLanguage('mg')" class="lang-btn active">MG</button> |
     <button onclick="changeLanguage('fr')" class="lang-btn">FR</button> |
@@ -68,17 +69,21 @@
       <span class="hero__title-accent" data-i18n="hero_title_accent">Iray ny fikasana.</span>
     </h1>
     <p class="hero__lead" data-i18n="hero_lead">
+<<<<<<< HEAD
       Ny Soratra Masina vakiana isan'andro, ny lalao nampifandraisana taranaka maro,
       nifandimby — natao ho an'ny fitaovana
       manaraka ny taona, kanefa mitazona ny votoatiny.
+=======
+      Ny Baiboly vakiana isan'andro, ny lalao nampifandraisana taranaka maro, ny kalendrie ara-pinoana, ny quiz momba ny tantara ary ny fihirana — natao ho an'ny fitaovana manaraka ny taona, kanefa mitazona ny votoatiny.
+>>>>>>> bbfce67 (add fihirana and imerina)
     </p>
     <div class="hero__scroll">
-      <span data-i18n="hero_scroll">Hijerena ny telo</span>
+      <span data-i18n="hero_scroll">Hijerena ny rehetra</span>
       <svg viewBox="0 0 12 20" aria-hidden="true"><path d="M6 0v18M1 13l5 5 5-5"></path></svg>
     </div>
   </section>
 
-  <!-- ============ SORATRA MASINA ============ -->
+  <!-- SORATRA MASINA -->
   <section class="app" id="soratramasina">
     <div class="app__figure">
       <svg viewBox="0 0 240 240" class="app__glyph" aria-hidden="true">
@@ -95,13 +100,9 @@
     </div>
     <div class="app__copy">
       <p class="app__eyebrow" data-i18n="bible_eyebrow">01 — Famakiana</p>
-      <h2 class="app__title">Soratra Masina</h2>
+      <h2 class="app__title" data-i18n="bible_title">Baiboly</h2>
       <p class="app__desc" data-i18n="bible_desc">
-        Application famakiana Baiboly, natao mba ho namana isan'andro:
-        mari-pamantarana miloko ny andininy tianao hotsarovana, fanoratana
-        naoty manokana eo am-pamakiana, fikarohana haingana amin'ny andininy
-        rehetra, ary fizarana na fanaovana kopy ny andininy iray na toko iray
-        manontolo amin'ny hiaraha-mamaky.
+        Application famakiana Baiboly, natao mba ho namana isan'andro: mari-pamantarana miloko ny andininy tianao hotsarovana, fanoratana naoty manokana eo am-pamakiana, fikarohana haingana amin'ny andininy rehetra, ary fizarana na fanaovana kopy ny andininy iray na toko iray manontolo amin'ny hiaraha-mamaky.
       </p>
       <ul class="app__features">
         <li data-i18n="bible_feat_1">Marika miloko amin'ny andininy</li>
@@ -112,18 +113,12 @@
       <div class="app__downloads">
         <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1LbAZDAo8bdBn4atjZINKK7cMUz7aV0wV" download>
           <span class="dl__hop" aria-hidden="true"></span>
-          <span class="dl__label">
-            <strong>Soratra Masina</strong>
-            <em>.apk &middot; Android</em>
-          </span>
+          <span class="dl__label"><strong>Baiboly</strong><em>.apk &middot; Android</em></span>
           <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
         </a>
         <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1emreUVPvdZx90TL7PpHYQDgJXozrpx14" download>
           <span class="dl__hop" aria-hidden="true"></span>
-          <span class="dl__label">
-            <strong>Soratra Masina</strong>
-            <em>.exe &middot; Windows</em>
-          </span>
+          <span class="dl__label"><strong>Baiboly</strong><em>.exe &middot; Windows</em></span>
           <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
         </a>
       </div>
@@ -132,46 +127,35 @@
 
   <div class="divider" aria-hidden="true"></div>
 
-  <!-- ============ LAKABE FANORONA ============ -->
+  <!-- LAKABE FANORONA -->
   <section class="app" id="lakabefanorona">
     <div class="app__figure">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%" class="app__glyph" aria-hidden="true">
         <style>
           .board-bg { fill: #f4ece1; }
           .board-line { stroke: #5c3a21; stroke-width: 2.5; stroke-linecap: round; }
           .stone { stroke: #1a1a1a; stroke-width: 1.5; }
           .stone--black { fill: #333333; }
           .stone--white { fill: #ffffff; stroke: #888888; }
-          .stone--live {
-            filter: drop-shadow(0px 0px 4px #ff9900);
-            stroke: #ff9900;
-            stroke-width: 2.5;
-          }
+          .stone--live { filter: drop-shadow(0px 0px 4px #ff9900); stroke: #ff9900; stroke-width: 2.5; }
         </style>
-
         <rect width="240" height="240" class="board-bg" rx="10" />
-
         <g class="fanorona-board">
           <line x1="40" y1="40" x2="200" y2="40" class="board-line" />
           <line x1="40" y1="120" x2="200" y2="120" class="board-line" />
           <line x1="40" y1="200" x2="200" y2="200" class="board-line" />
-
           <line x1="40" y1="40" x2="40" y2="200" class="board-line" />
           <line x1="120" y1="40" x2="120" y2="200" class="board-line" />
           <line x1="200" y1="40" x2="200" y2="200" class="board-line" />
-
           <line x1="40" y1="40" x2="200" y2="200" class="board-line" />
           <line x1="200" y1="40" x2="40" y2="200" class="board-line" />
         </g>
-
         <circle cx="40" cy="40" r="10" class="stone stone--white" />
         <circle cx="120" cy="40" r="10" class="stone stone--white" />
         <circle cx="200" cy="40" r="10" class="stone stone--black" />
-
         <circle cx="40" cy="120" r="10" class="stone stone--white" />
         <circle cx="120" cy="120" r="10" class="stone stone--white stone--live" />
         <circle cx="200" cy="120" r="10" class="stone stone--black" />
-
         <circle cx="40" cy="200" r="10" class="stone stone--black" />
         <circle cx="120" cy="200" r="10" class="stone stone--black" />
         <circle cx="200" cy="200" r="10" class="stone stone--black" />
@@ -179,14 +163,9 @@
     </div>
     <div class="app__copy">
       <p class="app__eyebrow" data-i18n="fanorona_eyebrow">02 — Filalaovana</p>
-      <h2 class="app__title">Lakabe Fanorona</h2>
+      <h2 class="app__title" data-i18n="fanorona_title">Fanorona</h2>
       <p class="app__desc" data-i18n="fanorona_desc">
-        Ny fanorona dia lalao malaza teto Madagasikara hatramin'ny ela, izay
-        mampiasa saina: ny fisamborana vato ataon'ny mpilalao amin'ny
-        fandalovana na fisintonana no mahatonga ny fifandonana isaky ny
-        fihetsika iray. Ity application ity dia mitondra io lalao io ao
-        anaty fitaovana finday na desktop, ho an'izay te-hifampiseho na hifanandrina
-        amin'ny sakaiza.
+        Ny fanorona dia lalao malaza teto Madagasikara hatramin'ny ela, izay mampiasa saina: ny fisamborana vato ataon'ny mpilalao amin'ny fandalovana na fisintonana no mahatonga ny fifandonana isaky ny fihetsika iray. Ity application ity dia mitondra io lalao io ao anaty fitaovana finday na desktop, ho an'izay te-hifampiseho na hifanandrina amin'ny sakaiza.
       </p>
       <ul class="app__features">
         <li data-i18n="fanorona_feat_1">Fanorona amin'ny fomba nentim-paharazana</li>
@@ -197,18 +176,12 @@
       <div class="app__downloads">
         <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1sBuLNaJGHYpSg6L-JtY6q9PsNVcLAaeu" download>
           <span class="dl__hop" aria-hidden="true"></span>
-          <span class="dl__label">
-            <strong>Lakabe Fanorona</strong>
-            <em>.apk &middot; Android</em>
-          </span>
+          <span class="dl__label"><strong>Fanorona</strong><em>.apk &middot; Android</em></span>
           <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
         </a>
         <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1Qq6vQLaP5twX_MJYDPMkb9ZitVIerwO7" download>
           <span class="dl__hop" aria-hidden="true"></span>
-          <span class="dl__label">
-            <strong>Lakabe Fanorona</strong>
-            <em>.exe &middot; Windows</em>
-          </span>
+          <span class="dl__label"><strong>Fanorona</strong><em>.exe &middot; Windows</em></span>
           <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
         </a>
       </div>
@@ -217,7 +190,7 @@
 
   <div class="divider" aria-hidden="true"></div>
 
-  <!-- ============ ALIMANAKA ============ -->
+  <!-- ALIMANAKA -->
   <section class="app" id="alimanaka">
     <div class="app__figure">
       <svg viewBox="0 0 240 240" class="app__glyph" aria-hidden="true">
@@ -234,14 +207,18 @@
     </div>
     <div class="app__copy">
       <p class="app__eyebrow" data-i18n="cal_eyebrow">03 — Kalendrie ara-pinoana</p>
-      <h2 class="app__title">Alimanaka</h2>
+      <h2 class="app__title" data-i18n="cal_title">Alimanaka</h2>
       <p class="app__desc" data-i18n="cal_desc">
+<<<<<<< HEAD
         Ny Alimanaka dia kalendrie litorjika katolika, manaraka ny
         tsingerin-taona ara-pivavahana (Fiaviana, Karemy, Paka, sns.) sy ny
         loko litorjika mifanaraka amin'ny vanim-potoana tsirairay.
         Miaraka amin'izany, misy ny rakitry ny Olomasina — tantaram-piainan'ny
         Olomasina tsirairay miaraka amin'ny fetiny — mba hahafahan'ny mpampiasa
         mahafantatra sy mankalaza ny Olomasina isan'andro.
+=======
+        Ny Alimanaka dia kalendrie litorjika katolika, manaraka ny tsingerin-taona ara-pivavahana (Fiaviana, Karemy, Paka, sns.) sy ny loko litorjika mifanaraka amin'ny vanim-potoana tsirairay. Miaraka amin'izany, misy ny rakitry ny Olomasina — tantaram-piainan'ny Olomasina tsirairay mbamin'ny fetiny — mba hahafahan'ny mpampiasa mahafantatra sy mankalaza ny Olomasina isan'andro.
+>>>>>>> bbfce67 (add fihirana and imerina)
       </p>
       <ul class="app__features">
         <li data-i18n="cal_feat_1">Kalendrie litorjika katolika isan'andro</li>
@@ -252,18 +229,12 @@
       <div class="app__downloads">
         <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1LkHxzngPEAWQTOyyMhJRq_WrbRQIbaon" download>
           <span class="dl__hop" aria-hidden="true"></span>
-          <span class="dl__label">
-            <strong>Alimanaka</strong>
-            <em>.apk &middot; Android</em>
-          </span>
+          <span class="dl__label"><strong>Alimanaka</strong><em>.apk &middot; Android</em></span>
           <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
         </a>
         <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1B4MFJdJlFyH4nQMzF9bOLbffoVp9QWt6" download>
           <span class="dl__hop" aria-hidden="true"></span>
-          <span class="dl__label">
-            <strong>Alimanaka</strong>
-            <em>.exe &middot; Windows</em>
-          </span>
+          <span class="dl__label"><strong>Alimanaka</strong><em>.exe &middot; Windows</em></span>
           <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
         </a>
       </div>
@@ -272,37 +243,122 @@
 
   <div class="divider" aria-hidden="true"></div>
 
+<<<<<<< HEAD
   <!-- ============ HAFA ============ -->
   <div style="text-align: center; margin-top: 3rem;">
+=======
+  <!-- IMERINA -->
+  <section class="app" id="imerina">
+    <div class="app__figure">
+      <svg viewBox="0 0 240 240" class="app__glyph" aria-hidden="true">
+        <rect x="50" y="170" width="140" height="18" rx="3" class="glyph-fill"></rect>
+        <rect x="70" y="148" width="100" height="18" rx="3" class="glyph-fill-alt"></rect>
+        <rect x="90" y="126" width="60" height="18" rx="3" class="glyph-fill"></rect>
+        <path d="M70 110 L70 70 L90 90 L120 55 L150 90 L170 70 L170 110 Z" class="glyph-fill"></path>
+        <circle cx="70" cy="68" r="6" class="glyph-fill-alt"></circle>
+        <circle cx="120" cy="52" r="7" class="glyph-fill-alt"></circle>
+        <circle cx="170" cy="68" r="6" class="glyph-fill-alt"></circle>
+        <circle cx="100" cy="100" r="3" class="glyph-fill-alt"></circle>
+        <circle cx="140" cy="100" r="3" class="glyph-fill-alt"></circle>
+      </svg>
+    </div>
+    <div class="app__copy">
+      <p class="app__eyebrow" data-i18n="imerina_eyebrow">04 — Quiz Imerina</p>
+      <h2 class="app__title" data-i18n="imerina_title">Imerina</h2>
+      <p class="app__desc" data-i18n="imerina_desc">
+        Tongasoa eto amin'ity quiz fohy ity izay hampahatsiahy antsika ny tantara manan-danja teto Imerina. Andramo valio am-pahatsiarovana ny fanontaniana rehetra ato! Ny anaran'ny mpanjaka, ny daty ary ny tantara nisy. Misy dingana telo ny lalao ary nasiana fetra ny fieritreretana ny valiny.
+      </p>
+      <ul class="app__features">
+        <li data-i18n="imerina_feat_1">Zavatra marina sy nisy</li>
+        <li data-i18n="imerina_feat_2">Misy dingana telo</li>
+        <li data-i18n="imerina_feat_3">Nasiana fetra ny fieritreretana</li>
+        <li data-i18n="imerina_feat_4">Daty maro tsara ho tadidy</li>
+      </ul>
+      <div class="app__downloads">
+        <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=18guXfVwE1nEPw4ZjKhOT5e6vyFo9B7JA" download>
+          <span class="dl__hop" aria-hidden="true"></span>
+          <span class="dl__label"><strong>Imerina</strong><em>.apk &middot; Android</em></span>
+          <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
+        </a>
+        <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1B4MFJdJlFyH4nQMzF9bOLbffoVp9QWt6" download>
+          <span class="dl__hop" aria-hidden="true"></span>
+          <span class="dl__label"><strong>Imerina</strong><em>.exe &middot; Windows</em></span>
+          <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- FIHIRANA -->
+  <section class="app" id="fihirana">
+    <div class="app__figure">
+      <svg viewBox="0 0 240 240" class="app__glyph" aria-hidden="true">
+        <path d="M40 60 C40 50 50 46 60 50 L115 70 L115 190 L60 172 C50 168 40 162 40 152 Z" class="glyph-fill"></path>
+        <path d="M200 60 C200 50 190 46 180 50 L125 70 L125 190 L180 172 C190 168 200 162 200 152 Z" class="glyph-fill-alt"></path>
+        <line x1="120" y1="70" x2="120" y2="190"></line>
+        <circle cx="75" cy="105" r="8" class="glyph-fill-alt"></circle>
+        <line x1="83" y1="105" x2="83" y2="75" stroke-width="3"></line>
+        <path d="M83 75 Q95 70 95 82" fill="none" stroke-width="3"></path>
+        <circle cx="155" cy="120" r="8" class="glyph-fill"></circle>
+        <line x1="163" y1="120" x2="163" y2="90" stroke-width="3"></line>
+        <path d="M163 90 Q175 85 175 97" fill="none" stroke-width="3"></path>
+        <circle cx="110" cy="145" r="5" class="glyph-fill-alt"></circle>
+        <line x1="115" y1="145" x2="115" y2="125" stroke-width="2.5"></line>
+      </svg>
+    </div>
+    <div class="app__copy">
+      <p class="app__eyebrow" data-i18n="fihirana_eyebrow">05 — Fihirana Katolika</p>
+      <h2 class="app__title" data-i18n="fihirana_title">Fihirana</h2>
+      <p class="app__desc" data-i18n="fihirana_desc">
+        Ny Fihirana dia fitambaran'ny hira masina ampiasaina ao amin'ny Fiangonana Katolika, na amin'ny lamesa, na amin'ny fotoam-pivavahana hafa. Izy io dia fomba iray hanomezana voninahitra an'Andriamanitra amin'ny alalan'ny feo, ny tononkira, ary ny fo. Nasiana sokajy sy fomba fitadiavana mba ho mora ampiasaina. Marihana fa mbola dingana voalohany ihany io izao fa mbola maro ny zavatra tokony hiova. Misy hira 60 izay be mpahalala indrindra ao anatiny.
+      </p>
+      <ul class="app__features">
+        <li data-i18n="fihirana_feat_1">Misy hira 60</li>
+        <li data-i18n="fihirana_feat_2">Handalam-panavaozana</li>
+        <li data-i18n="fihirana_feat_3">Hira voafantina tsara</li>
+        <li data-i18n="fihirana_feat_4">Misy sokajy maro</li>
+        <li data-i18n="fihirana_feat_5">Afaka zaraina amin'ny namana</li>
+      </ul>
+      <div class="app__downloads">
+        <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1Da9q6Spgkp0ZZWeckHnjCi3rVGD8NZ6D" download>
+          <span class="dl__hop" aria-hidden="true"></span>
+          <span class="dl__label"><strong>Fihirana</strong><em>.apk &middot; Android</em></span>
+          <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
+        </a>
+        <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1B4MFJdJlFyH4nQMzF9bOLbffoVp9QWt6" download>
+          <span class="dl__hop" aria-hidden="true"></span>
+          <span class="dl__label"><strong>Fihirana</strong><em>.exe &middot; Windows</em></span>
+          <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- HAFA -->
+  <div style="text-align: center;">
+>>>>>>> bbfce67 (add fihirana and imerina)
     <h2 class="app__title" data-i18n="other_title">Hafa</h2>
     <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;" data-i18n="other_desc">
-      Karazana lalao ho an'ny ankizy toy ny Fanorona 5 sy Fanorona 3
-      ary ny Volana izay natao handalinana ny teny Malagasy.
-      Marihana fa ho an'i Android daholo ireto.
+      Amin’izao vanim-potoana nomerika izao dia misy fomba vaovao hampianarana ny ankizy ny teny Malagasy sy ny kolontsaina malagasy amin’ny alalan’ny lalao. Anisan’izany ny fampiharana Android toy ny Fanorona 5, Fanorona 3 ary ny Volana, izay natao manokana ho an’ny ankizy mba handalinany ny teny Malagasy sady milalao.<br>Marihana fa ho an'i Android daholo ireto.
     </p>
     <div class="app__downloads" style="justify-content: center;">
       <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1kdcQomFyYIjfEgvsDZlWHzlVOo2BKkE3" download>
         <span class="dl__hop" aria-hidden="true"></span>
-        <span class="dl__label">
-          <strong>Fanorona 5</strong>
-          <em>.apk &middot; Android</em>
-        </span>
+        <span class="dl__label"><strong>Fanorona 5</strong><em>.apk &middot; Android</em></span>
         <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
       </a>
       <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1XCqZ_aHfH431GmFAHBPB5phFnMQxooIv" download>
         <span class="dl__hop" aria-hidden="true"></span>
-        <span class="dl__label">
-          <strong>Fanorona 3</strong>
-          <em>.apk &middot; Android</em>
-        </span>
+        <span class="dl__label"><strong>Fanorona 3</strong><em>.apk &middot; Android</em></span>
         <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
       </a>
       <a class="dl" href="https://drive.google.com/uc?export=download&confirm=t&id=1yM4_xrSqWgbi677ZRY_TK19ypTp_585a" download>
         <span class="dl__hop" aria-hidden="true"></span>
-        <span class="dl__label">
-          <strong>Volana</strong>
-          <em>.apk &middot; Android</em>
-        </span>
+        <span class="dl__label"><strong>Volana</strong><em>.apk &middot; Android</em></span>
         <svg class="dl__icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11M5 9l5 5 5-5M3 17h14"></path></svg>
       </a>
     </div>
@@ -312,13 +368,14 @@
 <footer class="footer">
   <div class="footer__mark">LakaBe</div>
   <div data-i18n="footer_zip_note">
-    Ny fichier rehetra halainao ato dia zip avokoa. 
-    Ny antony voalohany dia mba ho maivana ny fakana azy ary  
-    mba tsisy sakana eo ampisotonana azy amin'ny mety ahiahy ny system hoe virus.
+    Ny fichier rehetra halainao ato dia zip avokoa. Ny antony voalohany dia mba ho maivana ny fakana azy ary mba tsisy sakana eo ampisotonana azy amin'ny mety ahiahy ny system hoe virus. Manaraka izany ny fampiasana ireo asa tanako ireo dia maimaim-poana no zaraina ka tsy misy ny fiatohana na fanonerana raha sendra misy olana mitranga.
   </div>
   <br>
   <p class="footer__note" data-i18n="footer_author">
-    2026 - Mpanoratra RASOLOMANANA Heritiana Noe.
+    Aogositra 2026
+    Mpanoratra RASOLOMANANA Heritiana Noe.
+    rasolomananaheritiana@gmail.com
+    ANTANANARIVO - MADAGASIKARA
   </p>
 </footer>
 

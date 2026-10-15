@@ -49,6 +49,8 @@ const translations = {
     fihirana_feat_4: "Misy sokajy maro",
     fihirana_feat_5: "Afaka zaraina amin'ny namana",
 
+    rohy_title: "Rohy",
+    rohy_desc: "Ho antsika tia milalao online na mijery sy mamaky tantara, indro misy rohy atolotro anareo.",
     other_title: "Hafa",
     other_desc: "Amin'izao vanim-potoana nomerika izao dia misy fomba vaovao hampianarana ny ankizy ny teny Malagasy sy ny kolontsaina malagasy amin'ny alalan'ny lalao. Anisan'izany ny fampiharana Android toy ny Fanorona 5, Fanorona 3 ary ny Volana, izay natao manokana ho an'ny ankizy mba handalinany ny teny Malagasy sady milalao. Marihana fa ho an'i Android daholo ireto.",
 
@@ -104,6 +106,8 @@ const translations = {
     fihirana_feat_4: "Plusieurs catégories",
     fihirana_feat_5: "Partage facile avec vos proches",
 
+    rohy_title: "Liens",
+    rohy_desc: "Pour ceux qui aiment jouer en ligne, regarder et lire des histoires, voici les liens que je vous propose.",
     other_title: "Autres",
     other_desc: "À l'ère du numérique, il existe de nouvelles façons d'apprendre aux enfants la langue et la culture malgaches à travers le jeu. Cela inclut des applications Android comme Fanorona 5, Fanorona 3 et Volana, conçues spécialement pour les enfants afin qu'ils approfondissent leur connaissance de la langue malgache tout en s'amusant. Veuillez noter qu'elles sont toutes destinées à Android.",
 
@@ -159,6 +163,8 @@ const translations = {
     fihirana_feat_4: "Multiple categories",
     fihirana_feat_5: "Easy to share with friends",
 
+    rohy_title: "Links",
+    rohy_desc: "For those who like to play online, watch and read stories, here are the links I offer you.",
     other_title: "Others",
     other_desc: "In this digital age, there are new ways to teach children the Malagasy language and culture through play. This includes Android applications such as Fanorona 5, Fanorona 3 and Volana, designed specifically for children to deepen their knowledge of the Malagasy language while having fun. Please note that these are all for Android.",
 
